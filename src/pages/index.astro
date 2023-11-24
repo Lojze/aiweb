@@ -5,11 +5,10 @@ import { xata } from '../lib/xata'
 
 const page = await  xata.db.historyRecord.select([ "id", "title", "question", "association", "description", "createTime"]).getPaginated({
     pagination: {
-      size: 15,
+      size: 24,
     },
 });
 const data = page.records
-console.log(data)
 
 ---
 
