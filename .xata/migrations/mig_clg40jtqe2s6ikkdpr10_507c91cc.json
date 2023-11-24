@@ -1,0 +1,16 @@
+{
+  "id": "mig_clg40jtqe2s6ikkdpr10",
+  "parentID": "mig_clg3s85qe2s6ikkdpr00",
+  "checksum": "1:507c91cc8404fe860512a96950cd3683abe4b6e1c62cb2d70e0c39b5328f96d8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "createTime",
+          "type": "datetime"
+        },
+        "table": "historyRecord"
+      }
+    }
+  ]
+}

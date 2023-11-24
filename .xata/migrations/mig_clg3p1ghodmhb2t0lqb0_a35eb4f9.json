@@ -1,0 +1,16 @@
+{
+  "id": "mig_clg3p1ghodmhb2t0lqb0",
+  "parentID": "mig_clg3mq6ca0el0e9ci9r0",
+  "checksum": "1:a35eb4f92e75a7aa583a30499a1c6e2d32487b7ff2b79f69dc13b69e45ce53c5",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "question",
+          "type": "text"
+        },
+        "table": "historyRecord"
+      }
+    }
+  ]
+}

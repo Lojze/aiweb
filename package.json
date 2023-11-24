@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "xata": "xata",
+    "xata:init": "npx @xata.io/cli@latest init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts",
+    "xata:codegen": "xata codegen"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
@@ -16,11 +19,6 @@
     "@xata.io/cli": "^0.14.5",
     "@xata.io/client": "^0.27.0",
     "astro": "^3.5.5",
-    "dotenv": "^16.3.1",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2"
-  },
-  "devDependencies": {
-    "@types/node": "^20.9.4"
+    "tailwindcss": "^3.3.5"
   }
 }

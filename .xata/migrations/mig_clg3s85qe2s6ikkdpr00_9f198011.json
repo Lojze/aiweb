@@ -1,0 +1,16 @@
+{
+  "id": "mig_clg3s85qe2s6ikkdpr00",
+  "parentID": "mig_clg3s5uca0el0e9cia90",
+  "checksum": "1:9f1980117282e67d318d3342bb7aad485dacc9b088bf11c312b76a22abbcb9cb",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "description",
+          "type": "string"
+        },
+        "table": "historyRecord"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_clg46n0hodmhb2t0ls90",
+  "parentID": "mig_clg432uca0el0e9cib30",
+  "checksum": "1:cd09da312f9fb3c5da289ed12c4b9ede92ad5f0c2edda55fc0f67e2fdba31035",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "index",
+          "type": "int"
+        },
+        "table": "prompts"
+      }
+    }
+  ]
+}

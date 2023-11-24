@@ -1,0 +1,17 @@
+{
+  "id": "mig_clg476dqe2s6ikkdprtg",
+  "parentID": "mig_clg46n0hodmhb2t0ls90",
+  "checksum": "1:6e1f61fec6bd3bafdf8ab70768dbbd64c967f98c22992636fc8098d08459d7fb",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "currentIndex",
+          "type": "int",
+          "defaultValue": "1"
+        },
+        "table": "prompts"
+      }
+    }
+  ]
+}

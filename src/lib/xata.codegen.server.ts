@@ -17,14 +17,6 @@ const tables = [
       { name: "createTime", type: "datetime" },
     ],
   },
-  {
-    name: "prompts",
-    columns: [
-      { name: "name", type: "string" },
-      { name: "index", type: "int" },
-      { name: "currentIndex", type: "int", defaultValue: "1" },
-    ],
-  },
 ] as const;
 
 export type SchemaTables = typeof tables;
@@ -33,12 +25,8 @@ export type InferredTypes = SchemaInference<SchemaTables>;
 export type HistoryRecord = InferredTypes["historyRecord"];
 export type HistoryRecordRecord = HistoryRecord & XataRecord;
 
-export type Prompts = InferredTypes["prompts"];
-export type PromptsRecord = Prompts & XataRecord;
-
 export type DatabaseSchema = {
   historyRecord: HistoryRecordRecord;
-  prompts: PromptsRecord;
 };
 
 const DatabaseClient = buildClient();

@@ -1,0 +1,13 @@
+{
+  "id": "mig_clg3qilqe2s6ikkdpqu0",
+  "parentID": "mig_clg3qh0hodmhb2t0lrdg",
+  "checksum": "1:4d2f50746b2639519d2d8fb946d4f87ecaa13f2c903919f89f79dd020e19f901",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "an",
+        "table": "historyRecord"
+      }
+    }
+  ]
+}
