@@ -15,11 +15,31 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CD8T3LL9DK"></script>
+		<script>
+			// 创建第一个 script 标签
+			const script1 = document.createElement('script');
+			script1.async = true;
+			script1.src = "https://www.googletagmanager.com/gtag/js?id=G-CD8T3LL9DK";
+			document.head.appendChild(script1);
+
+			// 创建第二个 script 标签
+			const script2 = document.createElement('script');
+			script2.textContent = `
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'TAG_ID');
+			`;
+			document.head.appendChild(script2);
+		</script>
 	</head>
 	<body>
 		<slot />
 	</body>
-</html>
+	<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5596e87c7e5147d59ef2dc86c6d1c58a"}'></script><!-- End Cloudflare Web Analytics -->
+	</html>
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;
